@@ -1,8 +1,6 @@
 # Ruixuan Zhang
-# Kyoto University
-## Bioinformatics center, Ogata lab
-### Contact
-* Email: ruixuan@kuicr.kyoto-u.ac.jp
+### Kyoto University
+### Bioinformatics center, Ogata lab
 
 ### Education and Training
 * 2018  B.S Pharmaceutics  Shenyang Pharmaceutical University, Shenyang
@@ -14,3 +12,6 @@
 * Best Student Presentationer in EnVirus 2020
 
 ### Publications
+
+### Contact
+* Email: ruixuan@kuicr.kyoto-u.ac.jp
