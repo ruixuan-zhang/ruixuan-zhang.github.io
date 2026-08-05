@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://ruixuan-zhang.github.io/sitemap.xml
