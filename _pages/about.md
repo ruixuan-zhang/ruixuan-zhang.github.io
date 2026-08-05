@@ -4,7 +4,10 @@ title: about
 permalink: /
 subtitle: Postdoctoral Researcher · Kyoto University
 
-profile: false
+profile:
+  align: right
+  image: ruixuan-zhang.jpg
+  image_circular: false
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
