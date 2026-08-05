@@ -20,14 +20,14 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a postdoctoral researcher in the [_Ogata Lab (Microbial Ecology and Evolution)_](https://cls.kuicr.kyoto-u.ac.jp/) at Kyoto University. My primary expertise lies in bioinformatics and computational simulation. I integrate bioinformatics with experimental validation to understand how genomes evolve.
+I am a postdoctoral researcher in the _[Ogata Lab (Microbial Ecology and Evolution)](https://cls.kuicr.kyoto-u.ac.jp/)_ at Kyoto University. My primary expertise lies in bioinformatics and computational simulation. I integrate bioinformatics with experimental validation to understand how genomes evolve.
 
-Here are my [_publication list_](/publications/) and [_curriculum vitae_](https://drive.google.com/file/d/17zTlRe_UtOlDUayCn3DHMbj69ML7Q3xq/view?usp=drive_link).
+Here are my _[publication list](/publications/)_ and _[curriculum vitae](https://drive.google.com/file/d/17zTlRe_UtOlDUayCn3DHMbj69ML7Q3xq/view?usp=drive_link)_.
 
-I earned my Ph.D. at Kyoto University under the supervision of [_Prof. Hiroyuki Ogata_](https://cls.kuicr.kyoto-u.ac.jp/), where I studied the **mechanisms by which giant viruses hijack host translation systems**. I conducted multi-omics experiments—including RNA-seq, Ribo-seq, and tRNA-seq—with [_Prof. Shintaro Iwasaki_](http://iwasakirna.com/) at RIKEN, and performed _in situ_ fluorescent labeling with [_Assist. Prof. Anouk Willemsen_](https://dome.univie.ac.at/willemsen/) at the University of Vienna. I also isolated giant viruses with [_Prof. Masaharu Takemura_](https://www.tus.ac.jp/ridai/doc/ji/RIJIA01Detail.php?act=pos&kin=ken&diu=4d94&pri=en) at Tokyo University of Science and [_Dr. Hiroyuki Hikida_](https://scholar.google.com/citations?user=jQ_I2eEAAAAJ&hl=ja) at the National Institute of Infectious Diseases. This work was supported in part by a JSPS DC2 Fellowship, a Sasakawa Scientific Research Grant, and a JST Fellowship.
+I earned my Ph.D. at Kyoto University under the supervision of _[Prof. Hiroyuki Ogata](https://cls.kuicr.kyoto-u.ac.jp/)_, where I studied the **mechanisms by which giant viruses hijack host translation systems**. I conducted multi-omics experiments—including RNA-seq, Ribo-seq, and tRNA-seq—with _[Prof. Shintaro Iwasaki](http://iwasakirna.com/)_ at RIKEN, and performed _in situ_ fluorescent labeling with _[Assist. Prof. Anouk Willemsen](https://dome.univie.ac.at/willemsen/)_ at the University of Vienna. I also isolated giant viruses with _[Prof. Masaharu Takemura](https://www.tus.ac.jp/ridai/doc/ji/RIJIA01Detail.php?act=pos&kin=ken&diu=4d94&pri=en)_ at Tokyo University of Science and _[Dr. Hiroyuki Hikida](https://scholar.google.com/citations?user=jQ_I2eEAAAAJ&hl=ja)_ at the National Institute of Infectious Diseases. This work was supported in part by a JSPS DC2 Fellowship, a Sasakawa Scientific Research Grant, and a JST Fellowship.
 
-I am also developing a novel method for CAZyme annotation with [_Prof. Yanbin Yin_](https://foodscience.unl.edu/person/dr-yanbin-yin/) at the University of Nebraska–Lincoln.
+I am also developing a novel method for CAZyme annotation with _[Prof. Yanbin Yin](https://foodscience.unl.edu/person/dr-yanbin-yin/)_ at the University of Nebraska–Lincoln.
 
-See more on my [_Research_](/research/) page.
+See more on my _[Research](/research/)_ page.
 
 Beyond science, I am a naturalist who enjoys hiking and strength training.
