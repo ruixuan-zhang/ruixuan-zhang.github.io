@@ -7,18 +7,14 @@ nav: true
 nav_order: 3
 ---
 
-## Research
+## Genome evolution, organization, and beyond
 
-My research combines bioinformatics, computational simulation, and experimental validation to understand how genomes evolve and how microorganisms interact with their hosts and environments.
+My research explores how environments, genomes, and evolution interact to generate new genes, biological functions, and biochemical capabilities. I am particularly interested in how organisms adapt to environmental constraints and how they modify their local environments to create new evolutionary possibilities.
 
-### Giant viruses and host–virus interactions
+**For viruses,** the host cell is their living environment. Giant viruses often have codon usage patterns and nucleotide compositions that differ markedly from those of their hosts, creating an apparent mismatch with the host translation machinery. By integrating RNA-seq, tRNA-seq, ribosome profiling, imaging, and comparative genomics, I study how giant viruses overcome this mismatch. Our work showed that giant viruses establish a spatially organized translation environment within infected cells, enabling efficient translation of viral mRNAs ([_Nat. Microbiol., 2026_](https://doi.org/10.1038/s41564-025-02234-x)). This suggests that cell-wide measurements may not fully capture the local conditions that determine translation efficiency and viral fitness. I am interested in building simulation models to understand how codon usage and the local environment interact.
 
-I investigate how giant viruses reorganize host cells and hijack translation systems during infection. My work integrates RNA-seq, Ribo-seq, tRNA-seq, fluorescence imaging, and comparative genomics to study viral translation, codon usage, and genome evolution.
+**For host genomes,** comparative genomic analyses revealed extensive gene exchange between giant viruses and eukaryotic hosts, including more than 1 Mb of putatively virus-derived sequence in some fungal genomes ([_Virus Evol., 2023_](https://doi.org/10.1093/ve/vead064); [_bioRxiv, 2025_](https://doi.org/10.1101/2025.04.19.649669)). In addition, we found a putative 180-kb genomic transfer between isolated viruses ([_Appl. Environ. Microbiol., 2026_](https://doi.org/10.1128/aem.00105-26)). These findings suggest that viruses can serve as sources of new genes and biological functions.
 
-### Microbial genome evolution
+**At a broader scale,** I use machine learning to predict the functions of genes and genomic regions. I developed DeepCAZy, a deep-learning model for rapid annotation of carbohydrate-active enzymes, achieving 18,000 sequences per second! (_Will be published soon!_)
 
-I am interested in the evolutionary processes that shape microbial and viral genomes. I use comparative and evolutionary genomics to connect sequence variation with ecological adaptation and molecular function.
-
-### CAZyme annotation
-
-I am developing a novel method for carbohydrate-active enzyme (CAZyme) annotation with [Prof. Yanbin Yin](https://foodscience.unl.edu/person/dr-yanbin-yin/) at the University of Nebraska–Lincoln.
+My long-term goal is to integrate evolutionary genomics, multi-omics, systems biology, and machine learning to understand how genome architecture, gene birth, and biochemical innovation emerge across biological scales.
