@@ -2,7 +2,6 @@
 layout: page
 permalink: /research/
 title: research
-description: Research interests and current projects of Ruixuan Zhang.
 nav: true
 nav_order: 3
 ---

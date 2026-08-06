@@ -2,7 +2,6 @@
 layout: page
 permalink: /publications/
 title: publication
-description: Publications by Ruixuan Zhang.
 nav: true
 nav_order: 2
 ---
