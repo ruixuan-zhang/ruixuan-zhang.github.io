@@ -6,8 +6,6 @@ nav: true
 nav_order: 2
 ---
 
-## Publications
-
 <sup>\*</sup> Co-first author · <sup>†</sup> Co-corresponding author
 
 ### Preprints
