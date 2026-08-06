@@ -14,6 +14,6 @@ My research explores how environments, genomes, and evolution interact to genera
 
 **For host genomes,** comparative genomic analyses revealed extensive gene exchange between giant viruses and eukaryotic hosts, including more than 1 Mb of putatively virus-derived sequence in some fungal genomes (_[Virus Evol., 2023](https://doi.org/10.1093/ve/vead064)_; _[bioRxiv, 2025](https://doi.org/10.1101/2025.04.19.649669)_). In addition, we found a putative 180-kb genomic transfer between isolated viruses (_[Appl. Environ. Microbiol., 2026](https://doi.org/10.1128/aem.00105-26)_). These findings suggest that viruses can serve as sources of new genes and biological functions.
 
-**At a broader scale,** I use machine learning to predict the functions of genes and genomic regions. I developed DeepCAZy, a deep-learning model for rapid annotation of carbohydrate-active enzymes, achieving 18,000 sequences per second! (_Will be published soon!_)
+**At a broader scale,** I use machine learning to predict the functions of genes and genomic regions. I developed a deep-learning model for rapid annotation of carbohydrate-active enzymes.
 
 My long-term goal is to integrate evolutionary genomics, multi-omics, systems biology, and machine learning to understand how genome architecture, gene birth, and biochemical innovation emerge across biological scales.

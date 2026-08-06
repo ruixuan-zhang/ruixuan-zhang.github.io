@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2026-01-09
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+My main Ph.D. project is finally published in [Nature Microbiology](https://doi.org/10.1038/s41564-025-02234-x)!
