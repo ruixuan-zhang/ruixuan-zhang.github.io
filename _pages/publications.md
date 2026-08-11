@@ -9,8 +9,9 @@ nav_order: 2
 <sup>\*</sup> Co-first author · <sup>†</sup> Co-corresponding author
 
 ### Preprints
+- Meng, Lingjie, **Ruixuan Zhang**, Cristina De Castro, Ikuo Uchiyama, Minoru Kanehisa, Hiroyuki Ogata. "A hierarchical orthology framework reveals viral carbohydrate-active genes across the global virosphere." _[bioRxiv](https://www.biorxiv.org/content/10.64898/2026.08.04.742344v1.abstract)_ (2026): 2026-08.
 
-- Zhao, Hongda, Lingjie Meng, **Ruixuan Zhang**, Morgan Gaïa, and Hiroyuki Ogata. “_[Exploring the double-stranded DNA viral landscape in eukaryotic genomes](https://doi.org/10.1101/2025.04.19.649669)_.” _bioRxiv_ (2025): 2025.04.19.649669.
+- Zhao, Hongda, Lingjie Meng, **Ruixuan Zhang**, Morgan Gaïa, and Hiroyuki Ogata. “Exploring the double-stranded DNA viral landscape in eukaryotic genomes.” _[bioRxiv](https://doi.org/10.1101/2025.04.19.649669)_ (2026): 2025.04.19.649669.
 
 ### Journal Articles
 
