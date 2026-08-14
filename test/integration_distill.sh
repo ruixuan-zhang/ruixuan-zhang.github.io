@@ -1,14 +1,33 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+source test/post_fixture_helpers.sh
+
 tmp_dir="$(mktemp -d)"
 tmp_override="${tmp_dir}/distill-override.yml"
 tmp_site="${tmp_dir}/site"
 
 cleanup() {
+  cleanup_post_fixtures
   rm -rf "${tmp_dir}"
 }
 trap cleanup EXIT
+
+create_post_fixture "2021-05-22-distill.md" <<'MARKDOWN'
+---
+layout: distill
+title: distill integration fixture
+date: 2021-05-22
+giscus_comments: true
+mermaid:
+  enabled: true
+tikzjax: true
+authors:
+  - name: Integration Test
+---
+
+Temporary fixture for the distill integration test.
+MARKDOWN
 
 cat >"${tmp_override}" <<'YAML'
 giscus:

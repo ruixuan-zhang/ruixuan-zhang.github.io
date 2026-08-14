@@ -1,14 +1,41 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+source test/post_fixture_helpers.sh
+
 tmp_dir="$(mktemp -d)"
 tmp_override="${tmp_dir}/comments-test-override.yml"
 tmp_site="${tmp_dir}/site"
 
 cleanup() {
+  cleanup_post_fixtures
   rm -rf "${tmp_dir}"
 }
 trap cleanup EXIT
+
+create_post_fixture "2022-12-10-giscus-comments.md" <<'MARKDOWN'
+---
+layout: post
+title: giscus comments integration fixture
+date: 2022-12-10 11:59:00-0400
+giscus_comments: true
+related_posts: false
+---
+
+Temporary fixture for the comments integration test.
+MARKDOWN
+
+create_post_fixture "2015-10-20-disqus-comments.md" <<'MARKDOWN'
+---
+layout: post
+title: disqus comments integration fixture
+date: 2015-10-20 11:59:00-0400
+disqus_comments: true
+related_posts: false
+---
+
+Temporary fixture for the comments integration test.
+MARKDOWN
 
 cat >"${tmp_override}" <<'YAML'
 giscus:
