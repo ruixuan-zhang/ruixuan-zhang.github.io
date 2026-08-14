@@ -7,11 +7,42 @@
 # feature silently disappears. Only asserting the rendered output catches that.
 set -euo pipefail
 
+source test/post_fixture_helpers.sh
+
 tmp_dir="$(mktemp -d)"
 cleanup() {
+  cleanup_post_fixtures
   rm -rf "${tmp_dir}"
 }
 trap cleanup EXIT
+
+create_post_fixture "2022-10-15-rtl.md" <<'MARKDOWN'
+---
+layout: post
+title: RTL integration fixture
+date: 2022-10-15 10:00:00
+lang: fa
+---
+
+متن موقت برای آزمون پشتیبانی راست‌به‌چپ.
+MARKDOWN
+
+create_post_fixture "2025-04-28-marimo.md" <<'MARKDOWN'
+---
+layout: post
+title: marimo integration fixture
+date: 2025-04-28 12:00:00
+marimo: true
+---
+
+<div class="al-marimo-inline" markdown="1">
+
+```python
+1 + 1
+```
+
+</div>
+MARKDOWN
 
 build() {
   local name="$1"
