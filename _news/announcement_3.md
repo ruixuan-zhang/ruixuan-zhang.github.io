@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-My main Ph.D. project is finally published in [Nature Microbiology](https://doi.org/10.1038/s41564-025-02234-x)!
+My main Ph.D. project has now been published in [Nature Microbiology](https://doi.org/10.1038/s41564-025-02234-x)!

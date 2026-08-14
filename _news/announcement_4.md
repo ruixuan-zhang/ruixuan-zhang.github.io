@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Made an oral and a poster presentation in the Giant Virus Biology Symposium in Ringberg castle, hosted by Matthias Fischer. 
+I gave an oral presentation and presented a poster at the Giant Virus Biology Symposium, hosted by Matthias Fischer at Ringberg Castle.
