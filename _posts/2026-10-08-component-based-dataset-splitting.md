@@ -11,39 +11,21 @@ featured: true
 related_posts: false
 ---
 
-A dataset split can hit its target proportions exactly and still produce a training set that looks very different from its test set.
+To evaluate whether machine-learning models for proteins can generalize to unseen sequences, datasets are usually divided into training, validation, and test sets. These splits often enforce a maximum similarity threshold between subsets rather than assigning proteins entirely at random. This creates a more stringent test of generalization to remote homologs.
 
-In the experiment below, one splitting strategy achieved a perfect **70/15/15 sample ratio**. Yet its training samples were, on average, almost five times as long as its test samples. The training set also contained just **25% of the components**, despite holding 70% of the samples.
+However, similarity-aware splitting can introduce bias because related proteins may share properties such as sequence length. This relationship can create systematic differences among the resulting subsets. If this shift is ignored, a model may learn shortcuts associated with the split rather than the biological signal of interest.
 
-Adding length to the allocation objective reduced the distribution shift, but introduced a different problem: the sample proportions moved away from their targets.
+Here, I compare several splitting strategies and examine the caveats of component-based splitting.
 
-This post works through that trade-off using generated data, actual model training, and a shared evaluation set. The full experiment includes four data scenarios, four splitting strategies, two models, and all recorded predictions.
+A component is a group of samples that must remain in the same subset. In protein sequence analysis, components may represent clusters defined by sequence similarity, structural similarity, or another measure. If one member of a component is assigned to training, every member of that component is assigned there. This rule prevents closely related samples from being distributed across the training, validation, and test sets, although component sizes can vary substantially.
 
 > **About the data:** Every numerical result in this post comes from an independently designed synthetic experiment. No confidential data, statistics, or experimental results were used to fit the generator. Samples are numerical feature vectors; “length” is a simulated attribute in arbitrary units. This is an experiment about split allocation, not a benchmark on real protein sequences.
 
 > **Experiment archive:** The complete 82 MB package, including data, code, predictions, and saved models, is archived locally and is available on request.
 
-## Keeping components intact solves only part of the problem
-
-A _component_ is a group of samples that must stay together during splitting. In a sequence-analysis workflow, these groups might be connected components of a similarity graph. If A connects to B and B connects to C, all three belong to the same component, even if A and C do not share a direct edge.
-
-Here, component membership is generated directly. The experiment begins after grouping and does not test similarity search, graph construction, or homology detection.
-
-Once components are fixed, there are three separate questions:
-
-1. **Isolation:** Does any component appear in more than one subset?
-2. **Allocation:** How many samples and components does each subset receive, both overall and within each class?
-3. **Distribution:** How different are the subsets in length or other relevant attributes?
-
-Keeping a component intact does not automatically balance the other two quantities. A component with 400 samples and a component with 10 samples each count as one group.
-
-This distinction also matters when using existing tools. For example, the size parameters in scikit-learn’s `GroupShuffleSplit` refer to **groups**, not samples. The random-component baseline used here splits a stratified list of components and therefore has the same counting distinction, although it does not call `GroupShuffleSplit`. [Official documentation](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GroupShuffleSplit.html).
-
-Length bias is not an inevitable consequence of component splitting. It depends on how length relates to the group structure and how the groups are assigned. In real sequence workflows, alignment-coverage rules can also affect which sequences are connected. MMseqs2 documents several coverage definitions, but their effects on real graphs are outside this experiment. [MMseqs2 coverage documentation](https://github.com/soedinglab/MMseqs2/wiki#how-to-set-the-right-alignment-coverage-to-cluster).
-
 ## A small, controlled dataset
 
-Each development dataset contains **7,680 samples, 192 components, and eight classes**. Every class has 960 samples spread across 24 components. Components contain a single class, a deliberate simplification that avoids the additional constraints introduced by components spanning multiple labels.
+To examine these effects, I generated synthetic datasets, each containing **7,680 samples, 192 components, and eight classes**. Each class contains 960 samples distributed across 24 components. Every component contains samples from only one class, which avoids the additional constraints introduced by components spanning multiple labels.
 
 The four scenarios vary component sizes and their relationship with length:
 
@@ -68,6 +50,8 @@ The signal-noise standard deviation is set to `0.65 × sqrt(300 / length)`. Long
 For each data-generation seed, a separate **probe set** contains 2,304 samples from 96 new components, covering all classes and short, medium, and long length ranges. All scenarios and methods use the same probe for that seed. Probe generation uses separate random streams; its components never enter training or split optimization. Its length distribution is chosen separately and need not match any method’s test distribution.
 
 ## Four splitting strategies, two fixed models
+
+I evaluated four strategies for constructing the training, validation, and test sets.
 
 The target sample proportions are **70% training, 15% validation, and 15% test**.
 
