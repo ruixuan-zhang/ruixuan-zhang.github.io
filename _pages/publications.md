@@ -42,5 +42,4 @@ nav_order: 2
 
 ### Review Experience
 
-- Brazilian Journal of Microbiology
-- Microbiome
+- Microbiome and two more
